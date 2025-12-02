@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" rel="stylesheet">
   <style>
     :root{
-      --glass-light: rgba(255,255,255,0.55);
+      --glass-light: rgba(221, 220, 220, 0.55);
       --glass-dark: rgba(17,24,39,0.7);
       --card-dark: rgba(10,14,20,0.6);
       --neon: rgba(96,165,250,0.18);
@@ -42,20 +42,20 @@
   <!-- Background wrapper -->
   <div id="site" class="min-h-screen flex flex-col">
     <!-- gradient backgrounds for light & dark -->
-    <div aria-hidden="true" class="pointer-events-none fixed inset-0 -z-10 transition-all duration-500">
+    <div aria-hidden="true" class="pointer-events-none  fixed inset-0 -z-10 transition-all duration-500">
       <div id="bg-light" class="hidden dark:hidden"></div>
     </div>
 
     <!-- Header / Nav -->
-    <header class="sticky bg-slate-950 top-0 z-40">
+    <header class="sticky bg-slate-950 top-0 z-40 pl-2">
       <nav id="nav" class="container mx-auto px-4 py-4 flex items-center justify-between theme-transition">
         <div class="flex items-center gap-3">
-          <div class="text-2xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-indigo-600">
+          <div class="text-md md:text-2xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-cyan-400">
             Pinak Idea Lab Private Limited
           </div>
         </div>
 
-        <div class="hidden md:flex items-center gap-8">
+        <div class="hidden md:flex items-center gap-8 text-white">
           <a href="#home" class="text-sm font-medium hover:text-sky-500 transition">Home</a>
           <a href="#services" class="text-sm font-medium hover:text-sky-500 transition">Services</a>
           <a href="#contact" class="text-sm font-medium hover:text-sky-500 transition">Contact</a>
@@ -104,11 +104,11 @@
 
         <div class="container mx-auto px-4 py-24">
           <div class="grid md:grid-cols-2 gap-10 items-center">
-            <div class="space-y-6">
+            <div class="space-y-6 pl-4">
               <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
                 Crafting Digital Experiences that Inspire & Perform
               </h1>
-              <p class="max-w-xl text-lg text-gray-700 dark:text-gray-300">
+              <p class="max-w-xl text-lg text-black dark:text-gray-500 font-semibold">
                 Pinak Idea Lab Private Limited builds elegant, high-performance front-end experiences — designed for clarity, speed, and delightful interactions.
               </p>
               <div class="flex gap-4">
@@ -116,7 +116,7 @@
                   <span>Get in Touch</span>
                   <i class="fa-solid fa-arrow-right"></i>
                 </a>
-                <a href="#services" class="inline-flex items-center gap-3 px-5 py-3 rounded-2xl border border-transparent hover:border-sky-300 transition text-sm font-medium bg-white/12 dark:bg-white/6">
+                <a href="#services" class="inline-flex items-center gap-3 px-9 py-3 rounded-2xl border border-transparent hover:border-sky-300 transition text-sm font-medium bg-slate-950   dark:bg-white/6 text-white">
                   Our Services
                 </a>
               </div>
@@ -124,17 +124,17 @@
 
             <div>
               <div class="p-6 rounded-3xl backdrop-blur-md" id="hero-card">
-                <div class="p-6 rounded-2xl bg-white/30 dark:bg-[rgba(2,6,23,0.55)] neon-border">
+                <div class="p-6 rounded-2xl bg-white dark:bg-slate-950 neon-border">
                   <div class="space-y-4">
-                    <h3 class="text-xl font-semibold">What we deliver</h3>
-                    <p class="text-gray-700 dark:text-gray-300">Design-driven web UIs, component systems, and scalable front-end engineering focused on conversion and UX.</p>
+                    <h3 class="text-xl text-gray-50 font-semibold">What we deliver</h3>
+                    <p class="text-gray-700 dark:text-gray-200">Design-driven web UIs, component systems, and scalable front-end engineering focused on conversion and UX.</p>
                     <ul class="grid grid-cols-1 gap-3">
                       <li class="flex items-start gap-3">
                         <span class="flex-none w-10 h-10 rounded-lg flex items-center justify-center bg-white/30 dark:bg-white/6">
                           <i class="fa-solid fa-code"></i>
                         </span>
                         <div>
-                          <div class="font-medium">Front-end Engineering</div>
+                          <div class="font-medium text-gray-50">Front-end Engineering</div>
                           <div class="text-sm text-gray-600 dark:text-gray-400">React, Vue, performance-first builds.</div>
                         </div>
                       </li>
@@ -143,7 +143,7 @@
                           <i class="fa-solid fa-palette"></i>
                         </span>
                         <div>
-                          <div class="font-medium">UI / UX Design</div>
+                          <div class="font-medium text-gray-50">UI / UX Design</div>
                           <div class="text-sm text-gray-600 dark:text-gray-400">Pixel-perfect interfaces that convert.</div>
                         </div>
                       </li>
@@ -158,87 +158,87 @@
       </section>
 
       <!-- Services -->
-      <section id="services" class="py-20">
+      <section id="services" class="py-20 px-4">
         <div class="container mx-auto px-4">
           <div class="text-center mb-10">
             <h2 class="text-3xl font-bold">Services</h2>
-            <p class="text-gray-600 dark:text-gray-300 max-w-xl mx-auto mt-2">Tailored offers to help your product shine.</p>
+            <p class="text-gray-600 dark:text-gray-500 font-semibold max-w-xl mx-auto mt-2">Tailored offers to help your product shine.</p>
           </div>
 
           <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <!-- Card A -->
-            <article class="p-6 rounded-2xl backdrop-blur-md bg-white/40 dark:bg-[rgba(3,7,18,0.6)] neon-border hover:-translate-y-2 transform transition shadow-lg">
+            <article class="p-6 rounded-2xl backdrop-blur-md bg-slate-950 neon-border hover:-translate-y-2 transform transition shadow-lg">
               <div class="flex items-center gap-4">
                 <div class="w-12 h-12 rounded-xl flex items-center justify-center bg-gradient-to-br from-sky-500 to-indigo-600 text-white">
                   <i class="fa-solid fa-code"></i>
                 </div>
                 <div>
-                  <h3 class="font-semibold">Web Development</h3>
+                  <h3 class="font-semibold text-white">Web Development</h3>
                   <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">Scalable, accessible, and fast front-end implementations.</p>
                 </div>
               </div>
             </article>
 
             <!-- Card B -->
-            <article class="p-6 rounded-2xl backdrop-blur-md bg-white/40 dark:bg-[rgba(3,7,18,0.6)] neon-border hover:-translate-y-2 transform transition shadow-lg">
+            <article class="p-6 rounded-2xl backdrop-blur-md bg-white/40 dark:bg-slate-950 neon-border hover:-translate-y-2 transform transition shadow-lg">
               <div class="flex items-center gap-4">
                 <div class="w-12 h-12 rounded-xl flex items-center justify-center bg-gradient-to-br from-emerald-400 to-sky-500 text-white">
                   <i class="fa-solid fa-paint-brush"></i>
                 </div>
                 <div>
-                  <h3 class="font-semibold">UI / UX Design</h3>
+                  <h3 class="font-semibold text-white">UI / UX Design</h3>
                   <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">Research-led design for better user journeys.</p>
                 </div>
               </div>
             </article>
 
             <!-- Card C -->
-            <article class="p-6 rounded-2xl backdrop-blur-md bg-white/40 dark:bg-[rgba(3,7,18,0.6)] neon-border hover:-translate-y-2 transform transition shadow-lg">
+            <article class="p-6 rounded-2xl backdrop-blur-md bg-white/40 dark:bg-slate-950 neon-border hover:-translate-y-2 transform transition shadow-lg">
               <div class="flex items-center gap-4">
                 <div class="w-12 h-12 rounded-xl flex items-center justify-center bg-gradient-to-br from-pink-500 to-rose-500 text-white">
                   <i class="fa-solid fa-rocket"></i>
                 </div>
                 <div>
-                  <h3 class="font-semibold">Performance Optimization</h3>
+                  <h3 class="font-semibold text-white">Performance Optimization</h3>
                   <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">Improve load speed, Core Web Vitals, and retention.</p>
                 </div>
               </div>
             </article>
 
             <!-- Card D -->
-            <article class="p-6 rounded-2xl backdrop-blur-md bg-white/40 dark:bg-[rgba(3,7,18,0.6)] neon-border hover:-translate-y-2 transform transition shadow-lg">
+            <article class="p-6 rounded-2xl backdrop-blur-md bg-white/40 dark:bg-slate-950 neon-border hover:-translate-y-2 transform transition shadow-lg">
               <div class="flex items-center gap-4">
                 <div class="w-12 h-12 rounded-xl flex items-center justify-center bg-gradient-to-br from-violet-500 to-indigo-500 text-white">
                   <i class="fa-solid fa-mobile-screen-button"></i>
                 </div>
                 <div>
-                  <h3 class="font-semibold">Responsive Systems</h3>
+                  <h3 class="font-semibold text-white">Responsive Systems</h3>
                   <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">Design systems and components that scale.</p>
                 </div>
               </div>
             </article>
 
             <!-- Card E -->
-            <article class="p-6 rounded-2xl backdrop-blur-md bg-white/40 dark:bg-[rgba(3,7,18,0.6)] neon-border hover:-translate-y-2 transform transition shadow-lg">
+            <article class="p-6 rounded-2xl backdrop-blur-md bg-white/40 dark:bg-slate-950 neon-border hover:-translate-y-2 transform transition shadow-lg">
               <div class="flex items-center gap-4">
                 <div class="w-12 h-12 rounded-xl flex items-center justify-center bg-gradient-to-br from-amber-400 to-orange-500 text-white">
                   <i class="fa-solid fa-chart-line"></i>
                 </div>
                 <div>
-                  <h3 class="font-semibold">Conversion Focus</h3>
+                  <h3 class="font-semibold text-white">Conversion Focus</h3>
                   <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">Design and metrics to grow engagement and leads.</p>
                 </div>
               </div>
             </article>
 
             <!-- Card F -->
-            <article class="p-6 rounded-2xl backdrop-blur-md bg-white/40 dark:bg-[rgba(3,7,18,0.6)] neon-border hover:-translate-y-2 transform transition shadow-lg">
+            <article class="p-6 rounded-2xl backdrop-blur-md bg-white/40 dark:bg-slate-950 neon-border hover:-translate-y-2 transform transition shadow-lg">
               <div class="flex items-center gap-4">
                 <div class="w-12 h-12 rounded-xl flex items-center justify-center bg-gradient-to-br from-cyan-400 to-sky-500 text-white">
                   <i class="fa-solid fa-headset"></i>
                 </div>
                 <div>
-                  <h3 class="font-semibold">Support & Maintenance</h3>
+                  <h3 class="font-semibold text-white">Support & Maintenance</h3>
                   <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">Reliable updates and long-term partnerships.</p>
                 </div>
               </div>
@@ -250,24 +250,24 @@
       <!-- Contact -->
       <section id="contact" class="py-20">
         <div class="container mx-auto px-4">
-          <div class="max-w-3xl mx-auto p-8 rounded-3xl backdrop-blur-md bg-gradient-to-br from-white/20 to-white/10 dark:bg-[linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.01))] neon-border">
-            <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+          <div class="max-w-3xl mx-auto p-8 rounded-3xl backdrop-blur-md bg-gray-950  neon-border">
+            <h2 class="text-2xl font-bold mb-4 text-white">Contact Us</h2>
             <p class="text-gray-600 dark:text-gray-300 mb-6">Send a message and our team will get back within 1-2 business days.</p>
 
             <form id="contactForm" novalidate class="grid gap-4">
               <div class="grid sm:grid-cols-2 gap-4">
                 <div>
-                  <label class="block text-sm font-medium mb-2">Name</label>
+                  <label class="block text-sm font-medium mb-2 text-white">Name</label>
                   <input name="name" type="text" required class="w-full p-3 rounded-xl bg-white/30 dark:bg-[rgba(255,255,255,0.03)] border border-transparent focus:border-sky-400 focus-glow focus:ring-0" placeholder="Your name" />
                 </div>
                 <div>
-                  <label class="block text-sm font-medium mb-2">Email</label>
+                  <label class="block text-sm font-medium mb-2 text-white">Email</label>
                   <input name="email" type="email" required class="w-full p-3 rounded-xl bg-white/30 dark:bg-[rgba(255,255,255,0.03)] border border-transparent focus:border-sky-400 focus-glow focus:ring-0" placeholder="you@company.com" />
                 </div>
               </div>
 
               <div>
-                <label class="block text-sm font-medium mb-2">Message</label>
+                <label class="block text-sm font-medium mb-2 text-white">Message</label>
                 <textarea name="message" rows="5" required class="w-full p-3 rounded-xl bg-white/30 dark:bg-[rgba(255,255,255,0.03)] border border-transparent focus:border-sky-400 focus-glow focus:ring-0" placeholder="Tell us about your project"></textarea>
               </div>
 
@@ -285,16 +285,16 @@
     </main>
 
     <!-- Footer -->
-    <footer class="py-8">
+    <footer class="py-8 bg-slate-950">
       <div class="container mx-auto px-4 text-center">
         <div class="mb-4">
           <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/10 dark:bg-white/6">
-            <span class="font-bold">Pinak Idea Lab Private Limited</span>
+            <span class="font-bold text-white">Pinak Idea Lab Private Limited</span>
             <span class="text-sm text-gray-400">— building digital clarity</span>
           </div>
         </div>
 
-        <div class="flex items-center justify-center gap-4 mb-4">
+        <div class="flex items-center justify-center gap-4 mb-4 text-blue-500">
           <a href="#" class="p-2 rounded-full bg-white/6 dark:bg-white/6 hover:bg-white/12 transition"><i class="fa-brands fa-linkedin"></i></a>
           <a href="#" class="p-2 rounded-full bg-white/6 dark:bg-white/6 hover:bg-white/12 transition"><i class="fa-brands fa-twitter"></i></a>
           <a href="#" class="p-2 rounded-full bg-white/6 dark:bg-white/6 hover:bg-white/12 transition"><i class="fa-brands fa-github"></i></a>
